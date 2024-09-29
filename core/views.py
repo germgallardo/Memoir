@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def index(request):
-    return HttpResponse("Hellooo Bonny!")
+def home(request):
+    return render(request, 'core/template_core.html', {})
